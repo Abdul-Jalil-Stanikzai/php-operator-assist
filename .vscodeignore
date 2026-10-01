@@ -1,3 +1,6 @@
 test/**
 icon.svg
 *.vsix
+.gitignore
+.github/**
+extension/**
