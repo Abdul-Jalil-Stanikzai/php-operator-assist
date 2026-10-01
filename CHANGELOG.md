@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.1.4
+
+- Add GitHub repository, homepage, and issue tracker links to the Marketplace metadata.
+
 ## 0.1.3
 
 - Rename the extension to PHP Operator Assist before its first Marketplace release.
