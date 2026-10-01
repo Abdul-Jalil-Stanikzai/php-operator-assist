@@ -1,0 +1,36 @@
+{
+  "name": "php-operator-assist",
+  "displayName": "PHP Operator Assist",
+  "description": "Use a dot for PHP object and static access operators: -> and ::.",
+  "version": "0.1.3",
+  "publisher": "jalil-stanikzai",
+  "license": "MIT",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": ["Programming Languages", "Other"],
+  "keywords": ["php", "laravel", "object operator", "arrow", "dot"],
+  "activationEvents": ["onLanguage:php", "onLanguage:blade"],
+  "main": "./src/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "PHP Operator Assist",
+      "properties": {
+        "phpDotToArrow.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Convert a dot typed after a PHP object or class expression into -> or ::."
+        },
+        "phpDotToArrow.onlyWithoutWhitespace": {
+          "type": "boolean",
+          "default": true,
+          "description": "Only convert when the dot is immediately next to the expression. This helps preserve spaced string concatenation such as $a . $b."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
